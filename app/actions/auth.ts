@@ -24,7 +24,7 @@ export const signUp = async(formState:FormState,formData:FormData):Promise<FormS
             "User Data:",{
                 name,
                 email,
-                password
+                hashedPassword
             }
         )
     }
