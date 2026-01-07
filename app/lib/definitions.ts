@@ -7,7 +7,7 @@ export const SignUpFormSchema = z.object({
     email: z.email({ error: 'Please enter a valid email address' }).trim(),
     password: z
         .string()
-        .min(6, { error: 'Password must be at least 6 characters long.' })
+        .min(6, { error: 'Be at least 6 characters long.' })
         .regex(/[a-zA-Z]/, { error: "Contain at least one letter" })
         .regex(/[0-9]/, { error: 'Contain at least a number' })
         .regex(/[^a-zA-Z0-9]/, { error: 'Contain at least one special character' })
